@@ -18,6 +18,7 @@ namespace LogicBuilding
 
             CheckEvenOrOdd(number);
             Multiplication(number);
+            SumofnNaturalNumbers(number);
         }
 
         private static void CheckEvenOrOdd(int number)
@@ -37,6 +38,17 @@ namespace LogicBuilding
             for (int i = 1; i < 11; i++)
             {
                 Console.WriteLine($"{i:#0}*{number:#0}={i * number}");
+            }
+        }
+        private static void SumofnNaturalNumbers(int number)
+        {
+            if (number < 1)
+            {
+                Console.WriteLine("Your number is not natural");
+            }
+            else 
+            {
+                Console.WriteLine($"{number*(number+1)/2}");
             }
         }
     }
