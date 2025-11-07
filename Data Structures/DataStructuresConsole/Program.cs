@@ -1,4 +1,6 @@
-﻿namespace DataStructuresConsole
+﻿using System;
+
+namespace DataStructuresConsole
 {
     internal class Program
     {
