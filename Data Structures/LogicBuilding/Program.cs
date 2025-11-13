@@ -19,6 +19,7 @@ namespace LogicBuilding
             CheckEvenOrOdd(number);
             Multiplication(number);
             SumofnNaturalNumbers(number);
+            SumofSquaresofFirstnNaturalNumbers(number);
         }
 
         private static void CheckEvenOrOdd(int number)
@@ -44,11 +45,24 @@ namespace LogicBuilding
         {
             if (number < 1)
             {
-                Console.WriteLine("Your number is not natural");
+                Console.WriteLine("Your number is not natural.");
             }
             else 
             {
                 int sum = number * (number + 1) / 2;
+                Console.WriteLine(sum);
+            }
+        }
+
+        private static void SumofSquaresofFirstnNaturalNumbers(int number)
+        {
+            if (number < 1)
+            {
+                Console.WriteLine("Your number is not natural.");
+            }
+            else
+            {
+                int sum = (number * (number + 1) * (2 * number + 1)) / 6;
                 Console.WriteLine(sum);
             }
         }
