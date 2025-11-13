@@ -48,7 +48,8 @@ namespace LogicBuilding
             }
             else 
             {
-                Console.WriteLine($"{number*(number+1)/2}");
+                int sum = number * (number + 1) / 2;
+                Console.WriteLine(sum);
             }
         }
     }
