@@ -2,6 +2,20 @@
 
 namespace LogicBuilding
 {
+    public struct IntPair
+    {
+        public int Number1 { get; set; }
+
+        public int Number2 { get; set; }
+    }
+
+    public class IntegerPair
+    {
+        public int Number1 { get; set; }
+
+        public int Number2 { get; set; }
+    }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -20,6 +34,22 @@ namespace LogicBuilding
             Multiplication(number);
             SumofnNaturalNumbers(number);
             SumofSquaresofFirstnNaturalNumbers(number);
+
+            int num2 = 12;
+            SwapTwoNumbers(ref number, ref num2);
+
+            IntegerPair p1 = new IntegerPair();
+            p1.Number1 = number;
+            p1.Number2 = 23;
+
+            IntPair p2 = new IntPair
+            {
+                Number1 = number,
+                Number2 = 34,
+            };
+
+            SwapTwoNumbers(p1);
+            SwapTwoNumbers(ref p2);
         }
 
         private static void CheckEvenOrOdd(int number)
@@ -47,7 +77,7 @@ namespace LogicBuilding
             {
                 Console.WriteLine("Your number is not natural.");
             }
-            else 
+            else
             {
                 int sum = number * (number + 1) / 2;
                 Console.WriteLine(sum);
@@ -65,6 +95,36 @@ namespace LogicBuilding
                 int sum = (number * (number + 1) * (2 * number + 1)) / 6;
                 Console.WriteLine(sum);
             }
+        }
+
+        private static void SwapTwoNumbers(ref int number1, ref int number2)
+        {
+            int temp = number1;
+            number1 = number2;
+            number2 = temp;
+        }
+
+        private static void SwapTwoNumbers(IntegerPair pair)
+        {
+            int temp = pair.Number1;
+            pair.Number1 = pair.Number2;
+            pair.Number2 = temp;
+        }
+
+        private static void SwapTwoNumbers(ref IntPair pair)
+        {
+            int temp = pair.Number1;
+            pair.Number1 = pair.Number2;
+            pair.Number2 = temp;
+        }
+
+        private static IntPair SwapTwoNumbers(IntPair pair)
+        {
+            return new IntPair
+            {
+                Number1 = pair.Number2,
+                Number2 = pair.Number1,
+            };
         }
     }
 }
