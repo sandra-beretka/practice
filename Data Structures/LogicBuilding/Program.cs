@@ -50,7 +50,15 @@ namespace LogicBuilding
 
             SwapTwoNumbers(p1);
             SwapTwoNumbers(ref p2);
+
+            IntegerPair p3 = new IntegerPair();
+            p3.Number1 = number;
+            p3.Number2 = 4;
+
+            FindClosesttonandDivisiblebym(p3);
         }
+
+        
 
         private static void CheckEvenOrOdd(int number)
         {
@@ -125,6 +133,11 @@ namespace LogicBuilding
                 Number1 = pair.Number2,
                 Number2 = pair.Number1,
             };
+        }
+
+        private static void FindClosesttonandDivisiblebym(IntegerPair pair)
+        {
+            throw new NotImplementedException();
         }
     }
 }
