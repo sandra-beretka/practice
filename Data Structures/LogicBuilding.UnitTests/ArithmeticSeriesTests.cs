@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LogicBuilding.UnitTests
+﻿namespace LogicBuilding.UnitTests
 {
     [TestClass]
     public class ArithmeticSeriesTests
@@ -16,7 +10,7 @@ namespace LogicBuilding.UnitTests
         public void ArithmeticSeries_ByParameters_ReturnsTheExpectedValue(int a1, int a2, int n, int expected)
         {
             // Act
-            int actual = ArithmeticSeries.ArithmeticSeriesnthterm(a1,a2,n);
+            int actual = ArithmeticSeries.ArithmeticSeriesnthterm(a1, a2, n);
 
             // Assert
             Assert.AreEqual(expected, actual);

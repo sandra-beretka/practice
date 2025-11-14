@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LogicBuilding
 {
@@ -14,10 +10,8 @@ namespace LogicBuilding
             {
                 throw new InvalidOperationException();
             }
-            else
-            {
-                return 7 - n;
-            }
+
+            return 7 - n;
         }
     }
 }
