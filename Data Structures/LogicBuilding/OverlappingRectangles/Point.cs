@@ -23,12 +23,12 @@
 
         public bool Below(Point other)
         {
-            return other.x < x;
+            return other.y < y;
         }
 
         public bool RightTo(Point other)
         {
-            return other.y < y;
+            return other.x < x;
         }
     }
 }
