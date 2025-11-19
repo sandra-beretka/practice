@@ -29,7 +29,6 @@
             Rectangle r1 = new Rectangle(p1, p4);
             Rectangle r2 = new Rectangle(p3, p2);
 
-
             // Act
             bool actual = r1.Overlaps(r2);
 
