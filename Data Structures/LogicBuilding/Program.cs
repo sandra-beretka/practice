@@ -56,6 +56,8 @@ namespace LogicBuilding
             p3.Number2 = 4;
 
             FindClosesttonandDivisiblebym(p3);
+
+            string ss = DecimaltoBinary.DectoBinConv(43);
         }
 
         
@@ -137,7 +139,7 @@ namespace LogicBuilding
 
         private static void FindClosesttonandDivisiblebym(IntegerPair pair)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }
